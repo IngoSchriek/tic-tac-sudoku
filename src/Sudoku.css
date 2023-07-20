@@ -1,0 +1,102 @@
+.main-grid--sudoku {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6px;
+  background: rgba(0, 119, 255, 0.335);
+  border-radius: 10px;
+  width: 460px;
+  height: 460px;
+}
+
+
+.grid--sudoku {
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 1px;
+  width: 32.87%;
+}
+
+.grid-row--sudoku input {
+  width: 100%;
+  margin: 1px;
+  border: none;
+  font-size: 30px;
+  color: rgba(0, 36, 78, 0.335);
+}
+
+.grid-row input {
+  display: flex;
+  appearance: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+
+.grid-row input:hover:not(:disabled) {
+  cursor: pointer;
+  z-index: 500;
+  transition: none;
+  background-color: rgb(248, 236, 220);
+}
+
+.grid-row input:focus {
+  z-index: 1000;
+  background-color: rgb(248, 236, 220);
+  transition: none;
+}
+
+.time {
+  width: 60px;
+  background-color: rgba(44, 44, 44, 0.182);
+  cursor: default;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+.time:hover, .time:active{
+  transform: none;
+
+}
+
+
+
+@media screen and (max-width: 496px) {
+  .main-grid--sudoku {
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+  }
+  .grid--sudoku {
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1px;
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .grid-row--sudoku input {
+    font-size: 20px;
+  }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::selection {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
