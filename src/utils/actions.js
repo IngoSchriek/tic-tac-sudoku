@@ -1,0 +1,6 @@
+export const NEW_SUDOKU = 'NEW_SUDOKU'
+export const NEW_HINT = 'NEW_HINT'
+export const VERIFY_SUDOKU = 'VERIFY_SUDOKU'
+export const NEW_SQUARE = 'NEW_SQUARE'
+export const CONTINUE_SUDOKU = 'CONTINUE_SUDOKU'
+export const RESET_SUDOKU = 'START_SUDOKU'
